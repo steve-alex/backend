@@ -1,4 +1,4 @@
-const express = require('express');
+import * as express from "express";
 
 const app = express();
 
@@ -9,16 +9,11 @@ app.get("/postcode/:postcode", (req, res) => {
     });
 });
 
-app.listen(3000, () => {
-    console.log( `server started at http://localhost:3000` );
-});
-
-async function getLatlonFromPostcode(postcode) {
+export async function getLatlonFromPostcode(postcode) {
     return "51.5074, 0.1278";
 }
 
-exports.getLatlonFromPostcode = getLatlonFromPostcode;
-
+export default app;
 
 
 

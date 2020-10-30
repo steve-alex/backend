@@ -1,10 +1,13 @@
 {
   "name": "amadstest",
   "version": "1.0.0",
-  "description": "",
+  "description": "A Million Ads Backend Tech Test",
   "main": "index.js",
   "scripts": {
-    "test": "jest"
+    "dev": "ts-node-dev index.js",
+    "test": "jest",
+    "build": "tsc",
+    "start": "node dist/index.js"
   },
   "author": "amads",
   "license": "ISC",
@@ -13,7 +16,10 @@
     "got": "^11.8.0"
   },
   "devDependencies": {
+    "@types/jest": "^26.0.15",
     "jest": "^26.6.1",
+    "ts-jest": "^26.4.3",
+    "ts-node-dev": "^1.0.0",
     "typescript": "^4.0.5"
   }
 }
