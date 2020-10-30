@@ -2,8 +2,9 @@
 This is a simple skeleton api dealing with data on postcode inputs. We've provided this knowing your time is precious, and we strongly suggest that you use this as your starting point, and complete as much as you can within the agreed time limit. However you may set up the project differently and/or use a different language or framework if you feel that helps to display your skills better.
 
 ## Your task is:
-1. create an endpoint that takes a single postcode and returns the latitude and longitude.
-2. create another endpoint (or extend the one in step 1) to take a set of postcodes and return the relevant latitude and longitude for each.
+1. Create an endpoint that takes a single postcode and returns the latitude and longitude.
+2. Create another endpoint (or extend the one in step 1) to take a set of postcodes and return the relevant latitude and longitude for each.
+3. Still got time left? extend further by returning more useful data about the location, e.g. weather
 
 Please complete as much of the task as you can in a 2 hour timeframe. We're not expecting you to return a completely finished project, but you should be prepared to talk about the choices you've made. We'd like to see your Git commit history to understand how you've built up your solution, so please be sure to make commits as you go along.
 
@@ -21,5 +22,6 @@ You might notice that we've included support for TypeScript in this project - we
 ## Suggested Resources
 Feel free to use any of the below if you find them helpful:
 - https://postcodes.io
+- https://openweathermap.org/api
 - https://postman.com
 - [Latitude and Longitude - Wikipedia](https://en.wikipedia.org/wiki/Geographic_coordinate_system#Latitude_and_longitude)
