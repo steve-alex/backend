@@ -13,9 +13,9 @@ Please complete as much of the task as you can in a 2 hour timeframe. We're not 
 Clone this repo and run `npm install` to get started.
 
 ## Getting Started
-`npm run dev` will give you a live updating server
-`npm run build` will compile down to ES5 into the `dist` folder
-`npm run start` will serve the compiled code
-`npm run test` will run tests
+`npm run dev` will give you a live updating server<br/>
+`npm run build` will compile down to ES5 into the `dist` folder<br/>
+`npm run start` will serve the compiled code<br/>
+`npm run test` will run tests<br/>
 
 You might notice that we've included support for TypeScript in this project - we'd love to see you use TypeScript if you're familiar with it already. If you're not, we'd much rather see what you can do with JS than expect you to learn a new technology in the next 2 hours. Either way you can use the live updating server and test setup we've provided.
