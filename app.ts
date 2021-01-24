@@ -19,7 +19,6 @@ interface Weather {
     description: string,
     temperature: number,
     feels_like: number,
-    pressure: number,
     wind_speed: number
 }
 
@@ -41,7 +40,7 @@ async function getLocationsFromPostcodes(postcodes: any){
     try {
         const coordinatesArr = await getCoordinatesFromPostcodes(postcodes);
 
-        const locations: Coordinates[] = coordinatesArr.map(async (coordinates: Coordinates) => {
+        const locations = coordinatesArr.map(async (coordinates: Coordinates) => {
             const weather = await getWeatherFromCoordinates(coordinates);
     
             const location: Location = {
@@ -62,7 +61,7 @@ export async function getCoordinatesFromPostcodes(postcodes: any){
         const response = await axios.post(`https://api.postcodes.io/postcodes/`, { postcodes })
         const coordinates = response.data.result.map((location: any) => {
             return {
-                query: location.result.postcode,
+                postcode: location.result.postcode,
                 latitude: location.result.latitude,
                 longitude: location.result.longitude
             }
@@ -82,7 +81,6 @@ async function getWeatherFromCoordinates({ longitude, latitude }: Coordinates) {
             description: weatherData.weather[0].main,
             temperature: weatherData.main.temp,
             feels_like: weatherData.main.feels_like,
-            pressure: weatherData.main.pressure,
             wind_speed: weatherData.wind.speed
         }
 
