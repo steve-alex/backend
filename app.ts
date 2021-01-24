@@ -9,7 +9,7 @@ app.get("/postcode/:postcode", (req, res) => {
     });
 });
 
-export async function getLatlonFromPostcode(postcode) {
+export async function getLatlonFromPostcode(postcode: any) {
     return "51.5074, 0.1278";
 }
 
